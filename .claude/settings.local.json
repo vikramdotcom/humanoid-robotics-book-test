@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p docs pages src components static)",
+      "Bash(dir /s)",
+      "Bash(dir)",
+      "Bash(git fetch --all --prune)",
+      "Bash(pwsh -File .specify/scripts/powershell/create-new-feature.ps1 -Json \"Specs:\n- Framework: Docusaurus 2\n- Theme: Classic preset\n- Sections:\n  1. What is Physical AI?\n  2. Humanoid Robotics Basics\n  3. Sensors & Actuators\n  4. Robot Control Systems\n  5. Embodied Intelligence\n  6. Robot Locomotion\n  7. Human-Robot Interaction\n  8. Robotics Safety & Ethics\n- Use simple diagrams (ASCII)\n- Use short explanations\n- Auto-generate sidebar\n- Deployment targets: Vercel + GitHub Pages\" --number 1 --ShortName \"docusaurus-robotics-book\")",
+      "Bash(pwsh -File .specify/scripts/powershell/setup-plan.ps1 -Json)",
+      "Bash(pwsh -File .specify/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks)",
+      "Bash(npm run build)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

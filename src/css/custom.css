@@ -1,0 +1,103 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/* You can override the default Docusaurus variables here. */
+:root {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-code-font-size: 95%;
+}
+
+/* Dark theme variables */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+}
+
+/* Custom styles for the robotics book */
+.hero--primary {
+  background: linear-gradient(135deg, #1a2a6c, #2a5298, #3a7bd5);
+}
+
+.footer--dark {
+  background-color: #1a2a6c;
+}
+
+/* Custom styles for code blocks */
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for admonitions */
+.admonition {
+  border-left: 4px solid var(--ifm-color-primary);
+}
+
+.admonition--note {
+  border-left-color: #25c2a0;
+}
+
+.admonition--tip {
+  border-left-color: #54c7ec;
+}
+
+.admonition--caution {
+  border-left-color: #ffba00;
+}
+
+.admonition--danger {
+  border-left-color: #ff6b6b;
+}
+
+/* Custom styles for tables */
+.markdown table {
+  display: table;
+}
+
+/* Custom styles for images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Custom styles for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+/* Custom styles for navigation */
+.table-of-contents__link:hover {
+  color: var(--ifm-color-primary);
+}
+
+/* Custom styles for buttons */
+.button--primary {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.button--primary:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+}
