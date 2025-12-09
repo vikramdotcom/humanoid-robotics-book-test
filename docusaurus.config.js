@@ -3,6 +3,7 @@
 
 export default {
   baseUrl: '/human-robotics-physical-ai-book-test/',
+  url: 'https://docusaurus.io',
 };
 
 module.exports = {
