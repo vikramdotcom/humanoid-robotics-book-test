@@ -11,7 +11,7 @@ const config = {
   url: 'https://vikramdotcom.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // IMPORTANT: Must match your exact repo name and have trailing slash
-  baseUrl: '/human-robotics-physical-ai-book/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   organizationName: 'vikramdotcom',
