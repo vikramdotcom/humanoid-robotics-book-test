@@ -1,6 +1,16 @@
 // @ts-check
 // `@ts-check` enables ts to provide helpful type checking info
 
+module.exports = {
+  title: 'Human Robotics & Physical AI',
+  url: 'https://vikramdotcom.github.io',
+  baseUrl: '/human-robotics-physical-ai-book-test/',
+  organizationName: 'vikramdotcom',
+  projectName: 'humanoid-robotics-book-test',
+  trailingSlash: false,
+};
+
+
 const {themes} = require('prism-react-renderer');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
