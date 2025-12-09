@@ -3,7 +3,7 @@
 
 export default {
   baseUrl: '/human-robotics-physical-ai-book-test/',
-  url: 'https://docusaurus.io',
+  url: 'https://vikramdotcom.github.io',
 };
 
 module.exports = {
@@ -16,7 +16,7 @@ module.exports = {
 };
 
 
-const {themes} = require('prism-react-renderer');
+const {themes} = require ('prism-react-renderer');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Human Robotics & Physical AI Book',
