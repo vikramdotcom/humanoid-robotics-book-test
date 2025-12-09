@@ -74,7 +74,7 @@ const config = {
         title: 'Human Robotics & Physical AI',
         logo: {
           alt: 'Robotics Book Logo',
-          src: 'img/logo.svg',
+          src: 'img/ai1.svg',
         },
         items: [
           {
