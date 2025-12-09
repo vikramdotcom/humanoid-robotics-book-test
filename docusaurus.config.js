@@ -1,22 +1,6 @@
 // @ts-check
-// `@ts-check` enables ts to provide helpful type checking info
+const {themes} = require('prism-react-renderer');
 
-export default {
-  baseUrl: 'https://humanoid-robotics-book-test.vercel.app/',
-  url: 'https://vikramdotcom.github.io',
-};
-
-module.exports = {
-  title: 'Human Robotics & Physical AI',
-  url: 'https://vikramdotcom.github.io',
-  baseUrl: '/human-robotics-physical-ai-book-test/',
-  organizationName: 'vikramdotcom',
-  projectName: 'humanoid-robotics-book-test',
-  trailingSlash: false,
-};
-
-
-const {themes} = require ('prism-react-renderer');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Human Robotics & Physical AI Book',
@@ -26,20 +10,17 @@ const config = {
   // Set the production url of your site here
   url: 'https://vikramdotcom.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub Pages, this is usually '/<projectName>/'
-  baseUrl: '/human-robotics-physical-ai-book',
+  // IMPORTANT: Must match your exact repo name and have trailing slash
+  baseUrl: '/human-robotics-physical-ai-book/',
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub Pages, you don't need these.
-  organizationName: 'vikramdotcom', // Usually your GitHub org/user name.
-  projectName: 'human-robotics-physical-ai-book', // Usually your repo name.
-
+  organizationName: 'vikramdotcom',
+  projectName: 'human-robotics-physical-ai-book',
+  
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -52,12 +33,10 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/vikramdotcom/human-robotics-physical-ai-book/tree/main/',
         },
-        blog: false, // Disable blog for book format
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -68,7 +47,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Human Robotics & Physical AI',
