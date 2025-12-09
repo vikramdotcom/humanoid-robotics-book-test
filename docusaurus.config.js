@@ -2,7 +2,7 @@
 // `@ts-check` enables ts to provide helpful type checking info
 
 export default {
-  baseUrl: '/human-robotics-physical-ai-book-test/',
+  baseUrl: 'https://humanoid-robotics-book-test.vercel.app/',
   url: 'https://vikramdotcom.github.io',
 };
 
