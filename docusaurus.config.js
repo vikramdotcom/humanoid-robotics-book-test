@@ -1,6 +1,10 @@
 // @ts-check
 // `@ts-check` enables ts to provide helpful type checking info
 
+export default {
+  baseUrl: '/',
+};
+
 module.exports = {
   title: 'Human Robotics & Physical AI',
   url: 'https://vikramdotcom.github.io',
