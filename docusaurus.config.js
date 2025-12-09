@@ -2,7 +2,7 @@
 // `@ts-check` enables ts to provide helpful type checking info
 
 export default {
-  baseUrl: '/',
+  baseUrl: '/human-robotics-physical-ai-book-test/',
 };
 
 module.exports = {
