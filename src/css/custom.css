@@ -6,35 +6,58 @@
  */
 
 /* You can override the default Docusaurus variables here. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-font-family-base: 'Poppins', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Poppins', system-ui, sans-serif;
+  --ifm-font-weight-normal: 400;
+  --ifm-font-weight-semibold: 600;
+  --ifm-heading-font-weight: 600;
   --ifm-code-font-size: 95%;
+
+  /* Brand palette */
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1b3a99;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+
+  /* Layout tweaks */
+  --ifm-spacing-horizontal: 1.1rem;
+  --ifm-spacing-vertical: 1.1rem;
+  --ifm-button-border-radius: 999px;
 }
 
 /* Dark theme variables */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #8bafff;
+  --ifm-color-primary-dark: #7699ef;
+  --ifm-color-primary-darker: #5f7fcb;
+  --ifm-color-primary-darkest: #4b66a5;
+  --ifm-color-primary-light: #a7c3ff;
+  --ifm-color-primary-lighter: #c4d6ff;
+  --ifm-color-primary-lightest: #e0e9ff;
 }
 
 /* Custom styles for the robotics book */
 .hero--primary {
-  background: linear-gradient(135deg, #1a2a6c, #2a5298, #3a7bd5);
+  background: linear-gradient(135deg,  #1b3a99);
+  color: #f8fbff;
 }
 
 .footer--dark {
-  background-color: #1a2a6c;
+  background-color: #0f172a;
+}
+
+[data-theme='dark'] .hero--primary {
+  background: linear-gradient(135deg, #0f172a, #1e293b 50%, #0b1223);
+  color: #e5edff;
+}
+
+[data-theme='dark'] .footer--dark {
+  background-color: #0b1223;
 }
 
 /* Custom styles for code blocks */
@@ -101,3 +124,4 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--ifm-color-primary-dark);
   border-color: var(--ifm-color-primary-dark);
 }
+

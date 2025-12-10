@@ -15,7 +15,7 @@ const config = {
 
   // GitHub pages deployment config.
   organizationName: 'vikramdotcom',
-  projectName: 'human-robotics-physical-ai-book',
+  projectName: 'humanoid-robotics-physical-ai-book',
   
   trailingSlash: false,
   onBrokenLinks: 'throw',
@@ -34,7 +34,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/vikramdotcom/human-robotics-physical-ai-book/tree/main/',
+            'https://github.com/vikramdotcom/humanoid-robotics-physical-ai-book/tree/main/',
         },
         blog: false,
         theme: {
@@ -49,7 +49,7 @@ const config = {
     ({
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Human Robotics & Physical AI',
+        title: 'Humanoid Robotics & Physical AI',
         logo: {
           alt: 'Robotics Book Logo',
           src: 'img/logo.jpg',
@@ -62,7 +62,7 @@ const config = {
             label: 'Read Book',
           },
           {
-            href: 'https://github.com/vikramdotcom/human-robotics-physical-ai-book',
+            href: 'https://github.com/vikramdotcom/humanoid-robotics-physical-ai-book',
             label: 'GitHub',
             position: 'right',
           },
@@ -102,7 +102,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/vikramdotcom/human-robotics-physical-ai-book',
+                href: 'https://github.com/vikramdotcom/humanoid-robotics-physical-ai-book',
               },
             ],
           },
